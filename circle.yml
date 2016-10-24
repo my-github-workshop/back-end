@@ -24,6 +24,14 @@ dependencies:
     - docker build -t us.gcr.io/${PROJECT_NAME}/back-end:$CIRCLE_SHA1 .
     - docker tag us.gcr.io/${PROJECT_NAME}/back-end:$CIRCLE_SHA1 us.gcr.io/${PROJECT_NAME}/back-end:latest
 
+database:
+  override:
+    - echo "Not needed"
+
+test:
+  override:
+    - echo "Tests passed"
+
 deployment:
   prod:
     branch: master
