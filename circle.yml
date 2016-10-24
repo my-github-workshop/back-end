@@ -19,6 +19,7 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud config set compute/zone ${CLOUDSDK_COMPUTE_ZONE}
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet container clusters get-credentials $CLUSTER_NAME
     - mvn package
+    - sudo /opt/google-cloud-sdk/bin/gcloud docker pull us.gcr.io/${PROJECT_NAME}/back-end-base
     - docker build -t us.gcr.io/${PROJECT_NAME}/back-end:$CIRCLE_SHA1 .
     - docker tag us.gcr.io/${PROJECT_NAME}/back-end:$CIRCLE_SHA1 us.gcr.io/${PROJECT_NAME}/back-end:latest
 
