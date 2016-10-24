@@ -2,7 +2,7 @@ machine:
   environment:
     PROJECT_NAME: github-workshop
     CLUSTER_NAME: github-workshop-gke-cluster
-    CLOUDSDK_COMPUTE_ZONE: us-central1-f
+    CLOUDSDK_COMPUTE_ZONE: us-central1-b
   java:
     version: oraclejdk8
   services:
