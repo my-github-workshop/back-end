@@ -1,4 +1,4 @@
-FROM us.gcr.io/github-workshop/back-end-base:0.1
+FROM us.gcr.io/github-workshop/front-end:0.2
 
 MAINTAINER Academy Github Workshop <academy.github.workshop@gmail.com>
 
