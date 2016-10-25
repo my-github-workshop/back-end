@@ -10,6 +10,8 @@ public class indexPage {
   @GetMapping("/")
   public ModelAndView showResult() {
     return new ModelAndView("index");
+
+    console.log("jag trodde detta var js");
   }
 
 }
