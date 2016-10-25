@@ -11,8 +11,6 @@ public class indexPage {
   public ModelAndView showResult() {
     System.out.println("let's get wild");
     return new ModelAndView("index");
-
-    console.log("jag trodde detta var js");
   }
   
 
