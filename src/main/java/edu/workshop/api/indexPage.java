@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class indexPage {
 
-  @GetMapping("/")
+  @GetMapping("/index")
   public ModelAndView showResult() {
     return new ModelAndView("index");
   }
